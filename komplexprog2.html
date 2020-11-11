@@ -2,9 +2,10 @@
 <html lang="hu">
 <head>
     <meta charset="UTF-8">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
     <title>A számítógépek fő részei tétel</title>
 </head>
 <body>
@@ -19,6 +20,7 @@
            <li><a href="#periferiak">Perifériák</a></li>
            <li><a href="#rom">ROM</a></li>
            <li><a href="#ram">RAM</a></li>
+           <li><a href="Kiértékelés.html">Kiértékelés</a></li>
         </ul>
     </nav>
 </header>
@@ -39,9 +41,13 @@ Egy személyi számítógép alkatrészei általában a következők:
    <li> IO eszközök (billentyűzet, egér)     grafikus kártya     háttértárolók vezérlői     egyéb vezérlők (hálózati kártya, hangkártya stb.)</li>
 </ul>
 </p>
-<h1><a name= "alaplap">Alaplap</a></h1>
+<p>
+<h2><a name= "alaplap">Alaplap</a></h2>
 A számítógép alaplapjának (angolul motherboard, vagyis anyakártya) fő feladata a CPU kiszolgálása és a számítógép alapvető áramköreinek összekapcsolása.
-<h1><a name="cpu">CPU</a></h1>
+</p>
+<p>
+<h2><a name="cpu">CPU</a></h2>
+<img src="cpu.jpg" class="CPU" alt="CPU" id="CPU" title="CPU">
 A CPU (angol: Central Processing Unit – központi feldolgozó egység) más néven processzor, a számítógép „agya”, azon egysége, mely a programutasítások értelmezését és végrehajtását vezérli.
 A processzor főbb részei
  	    ALU: (Arithmetic and Logical Unit – Aritmetikai és Logikai Egység). A processzor alapvető alkotórésze, ami alapvető matematikai és logikai műveleteket hajt végre. Sebessége növelhető egy koprocesszor (FPU, Floating Point Unit, lebegőpontos műveleteket végző egység) beépítésével. Az FPU korábban külön részegység volt, manapság a processzorok mindegyike beépítve tartalmazza.
@@ -52,7 +58,9 @@ A processzor főbb részei
         flagregiszter, amely a processzor működése közben létrejött állapotok jelzőit (igaz, vagy hamis),  	        és az akkumulátor, (AC) amely pedig a logikai és aritmetikai műveletek egyik operandusát, majd az utasítás végrehajtása után az eredményt tartalmazza.
     Buszvezérlő: A regisztert és más adattárolókat összekötő buszrendszert irányítja. A busz továbbítja az adatokat.
     Cache: A modern processzorok fontos része a cache (gyorsítótár). A cache a processzorba, vagy a processzor környezetébe integrált memória, ami a viszonylag lassú rendszermemóriaelérést hivatott kiváltani azoknak a programrészeknek és adatoknak előzetes beolvasásával, amikre a végrehajtásnak közvetlenül szüksége lehet. A mai PC processzorok általában két gyorsítótárat használnak, egy kisebb (és gyorsabb) elsőszintű (L1) és egy nagyobb másodszintű (L2) cache-t. A gyorsítótár mérete ma már megabyte-os nagyságrendű.
-<h1><a name="hattertarak">Háttértárak</a></h1>
+</p>
+<p>
+<h2><a name="hattertarak">Háttértárak</a></h2>
 A számítógépek melletti, központi egységen kívüli tárolóeszközök a nagyobb mennyiségű adat, hosszabb program aktuálisan nem szükséges részeinek tárolására illetve archiválására szolgálnak; továbbá a gépek közötti adatcsere eszközeiként is használatosak. Ilyen célokra hagyományosan valamilyen lemezes tárolót használtak/használnak, de manapság számos felhasználási területen népszerűek a memóriakártyák is. Lemezes tárolók, lemezmeghajtók
 Közös jellemzőjük, hogy a meghajtó az adathordozót egy tengely mentén forgatja, miközben a lemezfelülettel párhuzamosan elhelyezkedő fej érzékeli vagy módosítja az információtárolásra szolgáló anyag valamely fizikai tulajdonságát. Ez a tulajdonság optikai vagy mágneses jellemző.
 Hajlékonylemezek
@@ -64,16 +72,24 @@ Az optikai lemez felületén az adatrögzítés a (mikrobarázdás) hanglemezekh
 Floppy
 Kapacitása: a kezdeti 160 kB-tól a 90-es évekre eljutott az 1,44-2,88 MB-ig. További fejlődés nem várható, mivel mára idejétmúlttá tették a zsebben hordható USB-s flashmeghajtók.
 A floppyt használat előtt formázni kell, bár általában gyárilag szokták megformázni. A megformázáskor létrejön a főkönyvtár és a fájl elhelyezkedési tábla. A lemezhez mindig szükséges egy meghajtó. Ez motorral megforgatja lemezt és az író-olvasó fej segítségével letapogatja az adatokat. A floppyban kárt tehet a mágnes, a hő, a víz.
-Ház és tápegység
+</p>
+<p>
+<h2>Ház és tápegység</h2>
 A számítógépház és a tápegységnek illetve az alaplap kialakításának (elrendezésánek) általában össze kell illenie. Jó példák erre az egyes PC szabványok:
-    XT
-    AT
-    ATX
-<h1><a name="tapegyseg">Tápegység</a></h1>
+<ul>
+    <li>XT</li>
+    <li>AT</li>
+    <li>ATX</li>
+</ul>
+</p>
+<p>
+<h2><a name="tapegyseg">Tápegység</a></h2>
 A tápegység (áramforrás), amely a számítógép alkotóelemeit látja el a szükséges árammal – pontosabban a szükséges értékű és terhelhetőségű feszültségekkel. A stabil feszültségek előállításán kívül figyelheti is azokat és a rendszer indításában is közrejátszhat (Power-good jel), illetve saját áramköreinek hőmérséklete alapján vezérelheti a hűtő ventilátorokat (kényszerkonvekciós hűtés). A megfelelő villamos teljesítmény és mechanikai méret (tulajdonképpen hatásfok) elérése érdekében szinte mindig kapcsolóüzemű elven működik.
-<h1><a name ="haz">Ház</a></h1>
+</p>
+<p>
+<h2><a name ="haz">Ház</a></h2>
 Háznak nevezzük a számítógép „dobozát”, amely a tápegységet, az alaplapi eszközöket, és a háttértárakat fogadja be, továbbá megfelelő szellőzést biztosít. Anyaga adott merevségű (anyagú és vastagságú) fém, illetve részben műanyag. Boltban külön is megvásárolható, ebben az esetben a fő elemek közül csak a tápegységet tartalmazza, vagy anélkül kapható.
-<h1><a name ="periferiak">Perifériák</a></h1>
+<h2><a name ="periferiak">Perifériák</a></h2>
 A perifériákat többféleképpen csoportosíthatjuk:
     Átvitel iránya alapján:
         beviteli (angolul input) – adatot szolgáltat a számítógép számára         kiviteli (angolul output) – a számítógép adatait a külvilág felé továbbítja
@@ -91,16 +107,22 @@ Kiviteli perifériák
     monitor     projektor     nyomtató (printer)     rajzgép (plotter)     hangszóró
 Ki/beviteli perifériák
     érintőképernyő (touchscreen)     modem (modem)
-<h1><a name="rom">Maradandó tárak (általában ROM)</a></h1>
+</p>
+<p>
+<h2><a name="rom">Maradandó tárak (általában ROM)</a></h2>
 Maradandó tárnak nevezzük az olyan információ- vagy adattároló eszközt, mely külső energiabefektetés hiányában is megőrzi az előzőleg felvitt állapotát. Legáltalánosabb változata a csak olvasható memória, a ROM, és az előzőekben tárgyalt másodlagos, harmadlagos memóriák.
-<h1><a name="ram">A nem maradandó tárak (RAM)</a></h1>
+</p>
+<p>
+<h2><a name="ram">A nem maradandó tárak (RAM)</a></h2>
+<img src="ram.jpg" alt="RAM" id="RAM" title="RAM" class="RAM" >
 Tovább oszthatók statikus és dinamikus tárakra.
 A statikus memóriában (SRAM) tárolt adat a tápfeszültség megszűnéséig marad meg. Az adatokat általában félvezető, flip-flop memóriában tárolják. Ciklusidejük megegyezik az elérési idejükkel. Energiatakarékos, gyors.
 A dinamikus memória (DRAM) tartalmát meghatározott időközönként frissíteni kell, mivel bizonyos idő után az adatok elvesznek. Ennek oka, hogy a benne található, sűrűn elhelyezett néhány pikofarad kapacitású kondenzátorok, melyek a memória elemi cellái, egy idő után kisülnek. Ilyen elvi felépítésű a ma használt SDRAM (Synchronous dynamic random access memory).
 A videokártya (más néven videoadapter, grafikus kártya vagy grafikus adapter) a számítógép megjelenítésért felelős fő alkotórésze. Feladata, hogy a számítógép által küldött képi információkat feldolgozza, és egy megjelenítő egység számára értelmezhető analóg jelekké alakítsa. Ez az egység lehet CRT monitor, LCD monitor, LCD modul, HDTV vagy kivetítő is. A grafikus kártya és a megjelenítő különböző grafikus szabványok szerint kommunikálhat egymással. A videokártya a kivitelezés alapján lehet alaplapra integrált vagy bővítőkártya.
 A hangkártya egy számítógép–bővítőkártya, ami audio jeleket fogad és ad ki, illetve – hangszórót vagy más hangkeltő/hangsugárzó eszközöket vezérelve – rendeltetésszerű módon hangokat kelt, számítógépes programok utasítására. Tipikus felhasználási területei: multimédiás alkalmazások, hang és videószerkesztések, és szórakozás (filmnézés, zenehallgatás, játékok).
+</p>
 </div>
-<a class="arrowup" href="#"><i class="fas fa-arrow-up"></i> </a>
+<a class="arrowup" href="#"><i class="fas fa-arrow-up"></i></a>
 <div class="footer">
     &copy; Számítógépek fő részei tétel || Gönczi Roland
 </div>
